@@ -3,7 +3,7 @@
 【ファイル説明】
 ・PlayWavThruTCP.ino
 　Arduino IDEのプログラムソース(2.0.4-nightly-20230219)
-　WifiのSSIDとパスワード、およびTCPの待ち受けポート番号は適宜変更してご使用ください、。
+　WifiのSSIDとパスワード、およびTCPの待ち受けポート番号は適宜変更してご使用ください。
 
 ・SAPItoTCP.ps1
 　M5stackに接続して動作確認を行うためのPowerShellスクリプト
