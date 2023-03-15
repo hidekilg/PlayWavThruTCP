@@ -17,7 +17,7 @@ WindowsOS上で入力した文字列を音声合成し、そのデータをTCP�
 接続先となるデバイスのIPアドレスとポート番号を適宜変更してご使用ください  
   
 実行方法は以下の通り  
-1) socket_client.ps1をWindows上の任意の場所に置く  
+1) SAPItoTCP.ps1をWindows上の任意の場所に置く  
 2) Windowsキー ＋ R 押下してPowerShellを起動  
 3) C:\> powershell -ExecutionPolicy RemoteSigned  
 4) C:\> C:\[任意の場所]\SAPItoTCP.ps1  
