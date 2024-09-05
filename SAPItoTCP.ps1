@@ -4,7 +4,8 @@ Write-Host "Key in a sentence after >>: or press [q] to quit" -ForegroundColor R
 #$ipaddress="127.0.0.1"
 $ipaddress="192.168.100.4"			# M5StackのIPアドレス
 $port=10000						# M5Stackの待ち受けポート番号
-$file = ".\output.wav"				# 音声データを保存するファイル名
+$path=Convert-Path .
+$file = $path+"output.wav"					# 音声データを保存するファイル名
 
 while ($TRUE)
 {
@@ -21,7 +22,7 @@ while ($TRUE)
 	$vs.Close()					# ファイルを閉じる
 
 	# ファイルからデータを取り出してバイト配列に入れる
-	[Byte[]]$byte_data = Get-Content $file -Encoding Byte
+	[Byte[]]$byte_data = Get-Content $file -AsByteStream
 
 #	Write-Host $byte_data.Length
 
