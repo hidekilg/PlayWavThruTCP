@@ -18,9 +18,10 @@ WindowsOS上で入力した文字列を音声合成し、そのデータをTCP�
   
 実行方法は以下の通り  
 1) SAPItoTCP.ps1をWindows上の任意の場所に置く  
-2) Windowsキー ＋ R 押下してPowerShellを起動  
-3) C:\> powershell -ExecutionPolicy RemoteSigned  
-4) C:\> C:\[任意の場所]\SAPItoTCP.ps1  
+2) PowerShellを管理者権限で起動  
+3) C:\> powershell -ExecutionPolicy RemoteSigned
+4) C:\> Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+5) C:\> C:\[任意の場所]\SAPItoTCP.ps1  
   
 【ライセンス】  
   
